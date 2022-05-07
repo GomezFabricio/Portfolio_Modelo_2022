@@ -1,0 +1,122 @@
+/* Global */
+
+:root {
+    /* colores */
+    --blanco:#fff;
+    --negro:#000000;
+    --oscuro: #212121;
+    --amarillo:#ffc107;
+    --rojo: #b92c08;
+    --gris: #757575;
+
+    /* fuentes */
+    --tipografia_titulo: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* body */
+body{
+    font-size: 16px;
+    background-color: var(--blanco)
+}
+
+/* Utility First */
+.contenedor{
+    width: 120rem;
+    margin: auto;
+}
+
+.pd-5r{
+    padding:0 1rem 0 1rem
+}
+
+/* Informacion contacto superior */
+.infor-contacto{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--negro);
+    color: var(--blanco);
+    height: 5rem;
+}
+
+.infor-contacto__infor{
+    display: flex;
+    gap: 2rem;
+}
+
+/* Navegacion */
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--oscuro);
+    height: 60px;
+}
+
+.navegacion__logo{
+    display: flex;
+    align-items: center;
+    font-family: var(--tipografia_titulo);
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.navegacion__menu{
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.navegacion__menu a{
+    font-family: var(--tipografia_titulo);
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0 2.5rem 0 2.5rem;
+}
+
+/* Header */
+header{
+    background-image: url('../img/neon3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 65rem;
+}
+
+.contenido-header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.31);
+    height: 65rem;
+    padding-top:2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: var(--blanco);
+    font-family: var(--tipografia_titulo);
+    font-weight: 300;
+}
+
+.contenido-header a{
+    font-weight: 500;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--rojo);
+    border: solid 2px var(--rojo);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#contenido-header__foto{
+    width: 35rem;
+    border-radius: 20rem;
+}
