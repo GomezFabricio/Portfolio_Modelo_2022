@@ -4,13 +4,13 @@
     /* colores */
     --blanco:#fff;
     --negro:#000000;
-    --oscuro: #212121;
-    --amarillo:#ffc107;
+    --oscuro: #1d1c1c;
     --rojo: #b92c08;
-    --gris: #757575;
+    --neon:#aa27e6;
 
     /* fuentes */
     --tipografia_titulo: 'Roboto', sans-serif;
+    --tipografia_secundaria:'Mukta', sans-serif; 
 }
 
 html{
@@ -25,7 +25,7 @@ html{
 /* body */
 body{
     font-size: 16px;
-    background-color: var(--blanco)
+    background-color: var(--oscuro)
 }
 
 /* Utility First */
@@ -87,36 +87,99 @@ header{
     background-image: url('../img/neon3.jpg');
     background-repeat: no-repeat;
     background-size:cover;
-    height: 65rem;
+    height: 70rem;
 }
 
 .contenido-header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.31);
-    height: 65rem;
-    padding-top:2rem;
+    height: 70rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     color: var(--blanco);
-    font-family: var(--tipografia_titulo);
-    font-weight: 300;
+    font-family: var(--tipografia_secundaria);
+    font-weight: lighter;
+    font-size: 2.5rem;
 }
 
-.contenido-header a{
-    font-weight: 500;
-    margin-top: 2rem;
+.contenido-header h2{
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: var(--tipografia_secundaria);
+    color: var(--blanco);
+    margin-bottom: 8rem;
+}
+
+.boton a{
+    font-weight: 400;
     text-decoration: none;
-    color: var(--rojo);
-    border: solid 2px var(--rojo);
-    padding: 1rem;
-    border-radius: 1rem;
+    color: var(--neon);
+    border: solid 2px var(--neon);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+}
+
+.boton a:hover{
+    font-weight: 600;
+    color: var(--neon);
 }
 
 #contenido-header__foto{
-    width: 35rem;
+    width: 19rem;
     border-radius: 20rem;
+} 
+
+/* SOBRE MI */
+
+.sobre-mi{
+    max-width: 120rem;
+    margin: auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 35rem 80rem;
+    grid-template-rows: auto;
+    gap: 3rem;
 }
+
+.sobre-mi__img img{
+    width: 35rem;
+}
+
+.sobre-mi h2{
+    font-family: var(--tipografia_titulo);
+    color: var(--blanco);
+}
+
+.sobre-mi__descripcion{
+    font-family: var(--tipografia_titulo);
+    color: var(--blanco);
+    text-align: justify;
+}
+
+.sobre-mi__botones{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sobre-mi__contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly
+}
+
+#blog-active{
+    background-color: var(--neon);
+    color: var(--blanco);
+    display: block; 
+    width: 6rem;
+}
+
+
+
+
