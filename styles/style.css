@@ -220,16 +220,21 @@ header{
 }
 
 /* CONTACTO */
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 60rem;
+    margin-top: 5rem;
+    gap:3rem;
+}
 
 .contacto h2{
-    text-align: center;
     font-family: var(--tipografia_titulo);
     color: var(--blanco);
-    margin: 4rem 0 5rem 0;
 }
 
 .formulario{
-    width: min( 60rem, 100% ); /* utilizar el valor mas pequeño */
+    width: min( 50rem, 100% ); /* utilizar el valor mas pequeño */
+    height: 60rem;
     margin: 0 auto;
     padding: 3rem;
     border-radius: 1rem;
@@ -242,10 +247,13 @@ header{
 
 .formulario fieldset{
     border: .2rem solid var(--neon);
+    -webkit-box-shadow: 7px 9px 7px -7px rgba(170,39,230,1);
+    -moz-box-shadow: 7px 9px 7px -7px rgba(170,39,230,1);
+    box-shadow: 7px 9px 7px -7px rgba(170,39,230,1);
 }
 
 .formulario legend{
-    width: 85%;
+    width: 50%;
     text-align: center;
     color: var(--blanco);
     font-family: var(--tipografia_secundaria);
@@ -258,8 +266,8 @@ header{
 .contenedor-campos{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    padding:1rem;
+    gap: 2rem;
+    padding:0.1rem;
 }
 
 .campo label{
@@ -294,5 +302,27 @@ header{
     border: .2rem solid var(--neon);
     font-family: var(--tipografia_secundaria);
     border-radius: .4rem;
+}
 
+.boton-contacto:hover{
+    cursor:pointer;
+}
+
+.contacto__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.contacto__descripcion img{
+    width: 50rem;
+    border-radius:1rem ;
+}
+
+.contacto__descripcion p{
+    color: var(--blanco);
+    font-family: var(--tipografia_secundaria);
+    color: var(--gris);
 }
