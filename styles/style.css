@@ -1,12 +1,12 @@
 /* Global */
-
 :root {
     /* colores */
     --blanco:#fff;
-    --negro:#000000;
+    --negro:#101010;
     --oscuro: #1d1c1c;
     --rojo: #b92c08;
     --neon:#aa27e6;
+    --gris:#a5a5a5;
 
     /* fuentes */
     --tipografia_titulo: 'Roboto', sans-serif;
@@ -38,6 +38,12 @@ body{
     padding:0 1rem 0 1rem
 }
 
+.bg-black{
+    background-color: var(--negro);
+    height: 62rem;
+    padding-top: 1.2rem;
+}
+
 /* Informacion contacto superior */
 .infor-contacto{
     display: flex;
@@ -45,6 +51,7 @@ body{
     background-color: var(--negro);
     color: var(--blanco);
     height: 5rem;
+    
 }
 
 .infor-contacto__infor{
@@ -58,6 +65,7 @@ body{
     justify-content: space-between;
     background-color: var(--oscuro);
     height: 60px;
+
 }
 
 .navegacion__logo{
@@ -87,7 +95,11 @@ header{
     background-image: url('../img/neon3.jpg');
     background-repeat: no-repeat;
     background-size:cover;
+    background-attachment: fixed;
     height: 70rem;
+    -webkit-box-shadow: inset 0px 9px 10px -3px rgba(170,39,230,1);
+    -moz-box-shadow: inset 0px 9px 10px -3px rgba(170,39,230,1);
+    box-shadow: inset 0px 9px 10px -3px rgba(170,39,230,1);
 }
 
 .contenido-header{
@@ -122,11 +134,13 @@ header{
     padding: 0.5rem;
     border-radius: 0.4rem;
     font-size: 2rem;
+    background-color: var(--oscuro);
 }
 
 .boton a:hover{
     font-weight: 600;
-    color: var(--neon);
+    color: var(--blanco);
+    background-color: var(--neon);
 }
 
 #contenido-header__foto{
@@ -137,13 +151,12 @@ header{
 /* SOBRE MI */
 
 .sobre-mi{
-    max-width: 120rem;
-    margin: auto;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 35rem 80rem;
     grid-template-rows: auto;
     gap: 3rem;
+    margin-bottom: 5rem;
 }
 
 .sobre-mi__img img{
@@ -157,8 +170,8 @@ header{
 
 .sobre-mi__descripcion{
     font-family: var(--tipografia_titulo);
-    color: var(--blanco);
     text-align: justify;
+    color: var(--gris);
 }
 
 .sobre-mi__botones{
@@ -180,6 +193,106 @@ header{
     width: 6rem;
 }
 
+/* TRABAJOS */
 
+.trabajos{
+    display: grid;
+    grid-template-columns: 40rem;
+    grid-template-rows: auto 30rem;
+    margin-bottom: 15rem;
+}
 
+.trabajos h2{
+    font-family: var(--tipografia_titulo);
+    color: var(--blanco);
+}
 
+.trabajos p{
+    font-family: var(--tipografia_titulo);
+    color: var(--gris);
+    text-align: justify;
+}
+
+.trabajos__galeria{
+    display:grid;
+    grid-template-columns: 27rem 27rem 27rem;
+    gap: 2.8rem;
+}
+
+/* CONTACTO */
+
+.contacto h2{
+    text-align: center;
+    font-family: var(--tipografia_titulo);
+    color: var(--blanco);
+    margin: 4rem 0 5rem 0;
+}
+
+.formulario{
+    width: min( 60rem, 100% ); /* utilizar el valor mas pequeño */
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem;
+    border:.2rem solid var(--neon);
+    color: var(--blanco);
+    -webkit-box-shadow: 7px 9px 7px -7px rgba(170,39,230,1);
+    -moz-box-shadow: 7px 9px 7px -7px rgba(170,39,230,1);
+    box-shadow: 7px 9px 7px -7px rgba(170,39,230,1);
+}
+
+.formulario fieldset{
+    border: .2rem solid var(--neon);
+}
+
+.formulario legend{
+    width: 85%;
+    text-align: center;
+    color: var(--blanco);
+    font-family: var(--tipografia_secundaria);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;  
+}
+
+.contenedor-campos{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding:1rem;
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 1rem;
+    font-family: var(--tipografia_secundaria);
+    font-weight: 300;
+}
+
+.campo input{
+    width: 100%;
+    padding:.5rem;
+}
+
+.campo textarea{
+    width: 100%;
+    height: 13rem;
+    resize: none;
+    border-radius: .7rem;
+    font-family: var(--tipografia_secundaria);
+}
+
+.enviar{
+    margin: auto;
+}
+
+.boton-contacto{
+    padding: .7rem;
+    width: 9rem;
+    background-color: var(--oscuro);
+    color: var(--neon);
+    border: .2rem solid var(--neon);
+    font-family: var(--tipografia_secundaria);
+    border-radius: .4rem;
+
+}

@@ -16,6 +16,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
     
+        <!-- Mukta -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+
+
         <!-- Estilos -->
         <link rel="preload" href="styles/style.css">
         <link rel="stylesheet" href="styles/style.css">
@@ -51,81 +57,106 @@
     <header>
 
         <div class="contenido-header">
-            <img src="img/sobre mi.jpeg" alt="" id="contenido-header__foto">
+            <img src="img/sobre mi.jpeg" alt="" id="contenido-header__foto"> 
 
-            <h1>Hola, soy Gomez Fabricio</h1>
-            <h2>Desarrollador web</h2>
+            <h1>Hola! mi nombre es Fabricio</h1>
+            <h2>Desarrollador web Freelancer</h2>
 
-            <a href="#" class="boton">Ver Portfolio</a>
+            <div class="boton">
+                <a href="#" class="">Ver Portfolio</a>
+            </div>
         </div>
 
     </header>
 
     <main>
-        <section>
-            <h2>Sobre mí</h2>
-
-            <p>Pellentesque consectetur mi ex, eu tempor dolor sagittis sit amet. Morbi tempus ex quis justo aliquam, 
-            nec luctus ipsum scelerisque.</p>
-
-            <div">
-                <a href="#" class="boton">Blog</a>
+        <section class="sobre-mi contenedor">
+            
+            <div class="sobre-mi__img">
+                <img src="img/sobre mi.jpeg" alt=""> 
             </div>
 
-            <div>
-                <a href="#" class="boton">Descargar CV</a>
-            </div> 
+            <div class="sobre-mi__contenedor">
+                
+                <h2>Sobre mí</h2>
 
-        </section>
+                <div class="sobre-mi__descripcion">
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum..</p>
+                </div>
 
-        <section class="portfolio">
-            <h2>Portfolio</h2>
+                <div class="sobre-mi__botones">
 
-            <div class="portfolio__galeria">
+                    <div class="boton">
+                        <a href="#" id="blog-active">Blog </a>
+                    </div>
 
-                <img src="img/galeria/image 2.jfif" alt="">
-                <img src="img/galeria/image 2.jfif" alt="">
-                <img src="img/galeria/image 2.jfif" alt="">
+                    <div class="boton">
+                        <a href="" class="">Descargar CV</a>
+                    </div> 
 
-                <img src="img/galeria/image 1.jfif" alt="">
-                <img src="img/galeria/image 1.jfif" alt="">
-                <img src="img/galeria/image 1.jfif" alt="">
+                </div>
 
             </div>
 
         </section>
 
-        <section>
+        <section class="bg-black">
+            <div class="trabajos contenedor">
+                <div class="trabajos__conteiner">
+                    <h2>Trabajos</h2>
+
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                    </p>
+                </div>
+
+                <div class="trabajos__galeria">
+
+                    <img src="img/galeria/image 2.jfif" alt="">
+                    <img src="img/galeria/image 2.jfif" alt="">
+                    <img src="img/galeria/image 2.jfif" alt="">
+
+                    <img src="img/galeria/image 2.jfif" alt="">
+                    <img src="img/galeria/image 2.jfif" alt="">
+                    <img src="img/galeria/image 2.jfif" alt="">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
             <h2>Contacto</h2>
-            <form action="">
+            <form action="" class="formulario contenedor">
                 <fieldset>
 
-                    <legend>Puede contactar conmigo llenando los campos</legend>
+                    <legend>Puede contactar conmigo rellenando los campos</legend>
                     
-                    <div class="campo">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su nombre">
-                    </div>
-                    
-                    <div class="campo">
-                        <label for="celular">Celular:</label>
-                        <input type="tel" id="celular" placeholder="Ingrese su telefono">
-                    </div>
+                    <div class="contenedor-campos">
 
-                    <div class="campo">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Ingrese su email">
-                    </div>
-                    
-                    <div class="campo">
-                        <label for="">Mensaje:</label>
-                        <textarea></textarea>
-                    </div>
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="celular">Celular:</label>
+                            <input type="tel" id="celular" placeholder="Ingrese su telefono">
+                        </div>
 
-                    <div class="enviar">
-                        <input type="submit" value="Enviar" class="boton">
-                    </div>
+                        <div class="campo">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Ingrese su email">
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="">Mensaje:</label>
+                            <textarea></textarea>
+                        </div>
 
+                        <div class="enviar">
+                            <input type="submit" value="Enviar" class="boton-contacto">
+                        </div>
+                    </div>
                 </fieldset>
             </form>
 
